@@ -34,7 +34,7 @@ Partial Class Form1
         '
         'ButtonConnect
         '
-        Me.ButtonConnect.Location = New System.Drawing.Point(26, 12)
+        Me.ButtonConnect.Location = New System.Drawing.Point(87, 12)
         Me.ButtonConnect.Name = "ButtonConnect"
         Me.ButtonConnect.Size = New System.Drawing.Size(161, 73)
         Me.ButtonConnect.TabIndex = 0
@@ -102,7 +102,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(342, 450)
         Me.Controls.Add(Me.ButtonInsert)
         Me.Controls.Add(Me.TextBoxEmail)
         Me.Controls.Add(Me.Label3)
