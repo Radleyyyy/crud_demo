@@ -33,6 +33,7 @@ Partial Class Form1
         Me.Button1 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.TextBoxHiddenID = New System.Windows.Forms.TextBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -123,6 +124,7 @@ Partial Class Form1
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.GroupBox1.Controls.Add(Me.TextBoxHiddenID)
         Me.GroupBox1.Controls.Add(Me.ButtonConnect)
         Me.GroupBox1.Controls.Add(Me.DataGridView1)
         Me.GroupBox1.Controls.Add(Me.TextBoxName)
@@ -138,6 +140,13 @@ Partial Class Form1
         Me.GroupBox1.Size = New System.Drawing.Size(367, 474)
         Me.GroupBox1.TabIndex = 10
         Me.GroupBox1.TabStop = False
+        '
+        'TextBoxHiddenID
+        '
+        Me.TextBoxHiddenID.Location = New System.Drawing.Point(97, 114)
+        Me.TextBoxHiddenID.Name = "TextBoxHiddenID"
+        Me.TextBoxHiddenID.Size = New System.Drawing.Size(249, 20)
+        Me.TextBoxHiddenID.TabIndex = 10
         '
         'Form1
         '
@@ -165,4 +174,5 @@ Partial Class Form1
     Friend WithEvents Button1 As Button
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents TextBoxHiddenID As TextBox
 End Class
