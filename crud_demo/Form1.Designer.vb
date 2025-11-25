@@ -32,12 +32,14 @@ Partial Class Form1
         Me.ButtonInsert = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'ButtonConnect
         '
-        Me.ButtonConnect.Location = New System.Drawing.Point(87, 12)
+        Me.ButtonConnect.Location = New System.Drawing.Point(97, 35)
         Me.ButtonConnect.Name = "ButtonConnect"
         Me.ButtonConnect.Size = New System.Drawing.Size(161, 73)
         Me.ButtonConnect.TabIndex = 0
@@ -47,7 +49,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(23, 118)
+        Me.Label1.Location = New System.Drawing.Point(29, 140)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(38, 13)
         Me.Label1.TabIndex = 1
@@ -55,7 +57,7 @@ Partial Class Form1
         '
         'TextBoxName
         '
-        Me.TextBoxName.Location = New System.Drawing.Point(64, 111)
+        Me.TextBoxName.Location = New System.Drawing.Point(97, 137)
         Me.TextBoxName.Name = "TextBoxName"
         Me.TextBoxName.Size = New System.Drawing.Size(249, 20)
         Me.TextBoxName.TabIndex = 2
@@ -63,7 +65,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(23, 149)
+        Me.Label2.Location = New System.Drawing.Point(35, 173)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(29, 13)
         Me.Label2.TabIndex = 3
@@ -71,7 +73,7 @@ Partial Class Form1
         '
         'TextBoxAge
         '
-        Me.TextBoxAge.Location = New System.Drawing.Point(64, 142)
+        Me.TextBoxAge.Location = New System.Drawing.Point(97, 173)
         Me.TextBoxAge.Name = "TextBoxAge"
         Me.TextBoxAge.Size = New System.Drawing.Size(249, 20)
         Me.TextBoxAge.TabIndex = 4
@@ -79,7 +81,7 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(23, 182)
+        Me.Label3.Location = New System.Drawing.Point(29, 206)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(35, 13)
         Me.Label3.TabIndex = 5
@@ -87,14 +89,14 @@ Partial Class Form1
         '
         'TextBoxEmail
         '
-        Me.TextBoxEmail.Location = New System.Drawing.Point(64, 175)
+        Me.TextBoxEmail.Location = New System.Drawing.Point(97, 203)
         Me.TextBoxEmail.Name = "TextBoxEmail"
         Me.TextBoxEmail.Size = New System.Drawing.Size(249, 20)
         Me.TextBoxEmail.TabIndex = 6
         '
         'ButtonInsert
         '
-        Me.ButtonInsert.Location = New System.Drawing.Point(26, 215)
+        Me.ButtonInsert.Location = New System.Drawing.Point(38, 241)
         Me.ButtonInsert.Name = "ButtonInsert"
         Me.ButtonInsert.Size = New System.Drawing.Size(287, 46)
         Me.ButtonInsert.TabIndex = 7
@@ -103,7 +105,7 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(26, 267)
+        Me.Button1.Location = New System.Drawing.Point(38, 293)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(287, 46)
         Me.Button1.TabIndex = 8
@@ -113,31 +115,42 @@ Partial Class Form1
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(13, 330)
+        Me.DataGridView1.Location = New System.Drawing.Point(29, 345)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(317, 108)
         Me.DataGridView1.TabIndex = 9
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.ButtonConnect)
+        Me.GroupBox1.Controls.Add(Me.DataGridView1)
+        Me.GroupBox1.Controls.Add(Me.TextBoxName)
+        Me.GroupBox1.Controls.Add(Me.Button1)
+        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Controls.Add(Me.ButtonInsert)
+        Me.GroupBox1.Controls.Add(Me.TextBoxAge)
+        Me.GroupBox1.Controls.Add(Me.TextBoxEmail)
+        Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Location = New System.Drawing.Point(530, 12)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(367, 474)
+        Me.GroupBox1.TabIndex = 10
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "GroupBox1"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(342, 450)
-        Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.ButtonInsert)
-        Me.Controls.Add(Me.TextBoxEmail)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBoxAge)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBoxName)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.ButtonConnect)
+        Me.ClientSize = New System.Drawing.Size(975, 577)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Form1"
         Me.Text = "Form1"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -151,4 +164,5 @@ Partial Class Form1
     Friend WithEvents ButtonInsert As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents GroupBox1 As GroupBox
 End Class
